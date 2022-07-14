@@ -1,0 +1,166 @@
+@import "styles/constants";
+.stylesMain{
+  width: 100%;
+  position: relative;
+  margin-top: -1px;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  .landImage{
+    z-index: -1;
+  }
+  .absolute{
+    display: flex;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -20vh;
+    background-color:white;
+    z-index: 6!important;
+    animation: mymove 2s 1;
+    @keyframes mymove {
+      from {
+        transform:translateX(-50%);
+      }
+      to {
+        transform:translateX(0);
+      }
+    }
+    .first{
+      width: 45%;
+      margin: 2.5%;
+      background-color: white;
+      overflow: hidden;
+      //width: 25vw;
+      //margin: 20px;
+      position: relative;
+      .landImage1{
+        width: 100%;
+        z-index: 1;
+      }
+    }
+    .second{
+      width: 45%;
+      margin: 2.5%;
+      z-index: 5;
+      overflow: hidden;
+      .title{
+        font-size: 32px;
+        font-family: $font-family1;
+        color: $title-color;
+        text-transform: uppercase;
+      }
+      .line{
+        width: 50px;
+        height: 2px;
+        background-color: $color-main;
+        margin: 10px 0;
+      }
+      .box{
+        border: 1px solid $color-main;
+        padding:10px 10px 30px 10px;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        .absolute1{
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          background-color: $color-main;
+          right: -10px;
+          bottom: -25px;
+          //border-top-left-radius: 20px;
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-around;
+          padding-top: 10px;
+          .iconArrow {
+            color: white;
+            font-size: 20px;
+            font-weight:lighter;
+          }
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 994px) {
+  .stylesMain{
+    .absolute{
+      .second{
+        .title{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .stylesMain{
+    width: 100%;
+    position: relative;
+    margin-top: -1px;
+    padding-top: 1px;
+    .landImage{
+      z-index: -1;
+    }
+    .absolute{
+      display: flex;
+      width: 80%;
+      margin-left: 10%;
+      height: auto;
+      margin-top: -20vh;
+      flex-direction: column;
+      .first{
+        width: 95%;
+        margin: 2.5%;
+        height: 60vh;
+        background-color: white;
+        overflow: hidden;
+        //width: 25vw;
+        //margin: 20px;
+        position: relative;
+        .landImage1{
+          width: 100%;
+          z-index: 1;
+        }
+      }
+      .second{
+        width: 95%;
+        margin: 2.5%;
+        overflow: hidden;
+        height: auto;
+        .line{
+          width: 50px;
+          height: 2px;
+          background-color: $color-main;
+          margin: 10px 0;
+        }
+        .box{
+          border: 1px solid $color-main;
+          padding:10px 10px 30px 10px;
+          margin-top: 20px;
+          position: relative;
+          overflow: hidden;
+        }
+        .absolute1{
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          background-color: $color-main;
+          right: -10px;
+          bottom: -25px;
+          //border-top-left-radius: 20px;
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-around;
+          padding-top: 10px;
+          .iconArrow {
+            color: white;
+            font-size: 20px;
+            font-weight:lighter;
+          }
+        }
+      }
+    }
+  }
+}

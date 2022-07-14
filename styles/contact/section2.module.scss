@@ -1,0 +1,76 @@
+@import "styles/constants";
+
+.last{
+  width: 100%;
+  padding-bottom: 100px;
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title{
+      font-size: 32px;
+      font-family: $font-family1;
+      color: $title-color;
+      text-transform: uppercase;
+    }
+    .line{
+      width: 50px;
+      height: 2px;
+      background-color: $color-main;
+      margin: 10px 0;
+    }
+  }
+  .grid {
+    width: 60vw;
+    margin-left: 20vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
+
+    .col {
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $color-main;
+      .icon{
+        font-size: 32px;
+        color: $color-main;
+        margin-bottom: 10px;
+      }
+      .title1{
+        font-size: 24px;
+        color: $title-color;
+        font-family: $font-family1;
+      }
+      .text{
+        color: $title-color;
+      }
+    }
+  }
+}
+@media (max-width: 435px) {
+  .last{
+    .flex{
+        .title{
+          font-size: 24px;
+      }
+    }
+    .grid{
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+}
+@media (max-width: 328px) {
+  .last{
+    .flex{
+        .title{
+          font-size: 20px;
+        }
+    }
+  }
+}

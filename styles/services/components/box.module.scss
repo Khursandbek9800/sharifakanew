@@ -1,0 +1,41 @@
+@import "styles/constants";
+.container{
+  background-color: white;
+  width: 100%;
+  padding: 25px 15px;
+  .title{
+    font-size: 24px;
+    font-family: $font-family1;
+    color: $title-color;
+    text-transform: uppercase;
+  }
+  .line{
+    width: 50px;
+    height: 2px;
+    background-color: $color-main;
+    margin: 10px 0;
+  }
+  .text{
+    color: $title-color;
+  }
+  .button{
+    border: 1px solid $title-color;
+    background-color: transparent;
+    color: gray;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    display: flex;
+    align-content: center;
+    .ic{
+      margin-left: 10px;
+    }
+    &:hover{
+      color: white;
+      cursor: pointer;
+      border: 1px solid $color-main;
+      background-color: $color-main;
+    }
+  }
+}

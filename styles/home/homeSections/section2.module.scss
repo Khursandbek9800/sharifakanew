@@ -1,0 +1,149 @@
+@import "styles/constants";
+
+.stylesMain{
+  top: -150px;
+  width: 100%;
+  position: relative;
+
+  .container{
+  width: 100%;
+  padding-top: 1px;
+  margin-top: -1px;
+  z-index: 1!important;
+  .landImage{
+    z-index: -1;
+  }
+  .wrapper{
+       .wrapOne{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top: 50px;
+         .title{
+           font-size: 32px;
+           color: white;
+           font-family: $font-family1;
+           text-transform: uppercase;
+         }
+         .text{
+          color: white;
+           width: 60%;
+           text-align: center;
+           margin-top: 20px;
+         }
+         .line{
+           width: 50px;
+           height: 2px;
+           background-color: $color-main;
+
+         }
+       }
+    .grid{
+      width: 60vw;
+      margin-left: 20vw;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-gap: 20px;
+      margin-top: 30px;
+      .col{
+        padding: 30px 10px;
+        border: 1px solid gray;
+        background-color: $color-primary;
+        display: flex;
+        .icon{
+          font-size: 34px;
+          color: $color-main;
+          margin-top: 10px;
+        }
+        .mar5{
+          margin-left: 15px;
+          .title{
+            font-size: 32px;
+            color: white;
+            font-family: $font-family1;
+            text-transform: uppercase;
+          }
+          .text{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+}
+@media (max-width: 1125px) {
+  .stylesMain{
+    .container{
+    }
+  }
+
+}
+@media (max-width: 800px) {
+  .stylesMain{
+    .container{
+      .landImage{
+        z-index: -1;
+      }
+      .wrapper{
+        .wrapOne{
+          .title{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .stylesMain{
+    .container{
+      .landImage{
+        z-index: -1;
+      }
+      .wrapper{
+        .wrapOne{
+          .title{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .stylesMain{
+    .container{
+      .landImage{
+        z-index: -1;
+      }
+      .wrapper{
+        .wrapOne{
+          width: 90%;
+          margin-left: 5%;
+          .title{
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .stylesMain{
+    .container{
+      .wrapper{
+        .wrapOne{
+          width: 90%;
+          margin-left: 5%;
+          .title{
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

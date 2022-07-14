@@ -1,0 +1,198 @@
+@import "styles/constants";
+
+.stylesMain{
+  width: 100%;
+  position: relative;
+  padding-top: 1px;
+  margin-top: -1px;
+  padding-bottom: 100px;
+  .landImage{
+    z-index: -1;
+  }
+.wrapper {
+  margin-top: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 32px;
+    font-family: $font-family1;
+    color: $title-color;
+    text-align: center;
+  }
+
+  .line {
+    width: 50px;
+    height: 2px;
+    background-color: $color-main;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0;
+    margin-top: 30px;
+    width: 60%;
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      border:1px solid rgba(0,0,255,0.25);
+      background-color: white;
+      color: $title-color;
+       &:first-child{
+         border-top: none;
+         border-left: none;
+       }
+      &:nth-child(4){
+        border-top: none;
+        border-right: none;
+      }
+      &:nth-child(5){
+        border-bottom: none;
+        border-left: none;
+      }
+      &:last-child{
+        border-bottom: none;
+        border-right: none;
+      }
+      &:hover{
+        background-color: $color-main;
+        color: white;
+        cursor: pointer;
+        border: none;
+        box-shadow:$color-main 0px 5px 15px;
+      }
+      &:hover .iconArrow{
+        color: white;
+      }
+      &:hover .mainIcon{
+        color: white;
+      }
+      .mainIcon {
+        font-size: 32px;
+        color: $color-main;
+      }
+      .titleBox {
+        font-size: 20px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-family: $font-family1;
+      }
+
+      .textBox {
+        text-align: center;
+      }
+
+      .iconArrow {
+        color: $color-main;
+      }
+    }
+  }
+}
+}
+@media (max-width: 1350px) {
+  .stylesMain {
+    .wrapper {
+      .boxes {
+        .box {
+          border: 1px solid rgba(0, 0, 255, 0.25);
+
+          &:first-child {
+            border-top: 1px solid rgba(0, 0, 255, 0.25);
+            border-left: 1px solid rgba(0, 0, 255, 0.25);
+          }
+
+          &:nth-child(4) {
+            border-top: 1px solid rgba(0, 0, 255, 0.25);
+            border-right: 1px solid rgba(0, 0, 255, 0.25);
+          }
+
+          &:nth-child(5) {
+            border-bottom: 1px solid rgba(0, 0, 255, 0.25);
+            border-left: 1px solid rgba(0, 0, 255, 0.25);
+          }
+
+          &:last-child {
+            border-bottom: 1px solid rgba(0, 0, 255, 0.25);
+            border-right: 1px solid rgba(0, 0, 255, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .stylesMain {
+    .wrapper{
+      margin-top: 40vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .boxes{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 0;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .stylesMain{
+    width: 100%;
+    position: relative;
+    padding-top: 1px;
+    margin-top: -1px;
+    .landImage{
+      z-index: -1;
+    }
+    .wrapper {
+      .boxes{
+        width:80%;
+
+        .box{
+          padding: 10px;
+        }
+      }
+      .title {
+        font-size: 24px;
+        font-family: $font-family1;
+        color: $title-color;
+      }
+
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: $color-main;
+      }
+    }
+  }
+}
+@media (max-width: 370px) {
+  .stylesMain{
+    .wrapper{
+      margin-top: 50vh;
+      .boxes{
+        .box{
+          padding:10px;
+          .mainIcon {
+            font-size: 28px;
+            color: $color-main;
+          }
+          .titleBox {
+            font-size: 16px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-family: $font-family1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.stylesMain {
+  width: 100%;
+  position: relative;
+  margin-top: -1px;
+  padding-top: 1px;
+  padding-bottom: 100px;
+  .landImage{
+    z-index: -1;
+  }
+  .container {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 50px;
+
+    .flex {
+      display: flex;
+      margin-top: 25px;
+      .img {
+        width: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .stylesMain {
+    .container {
+      width: 80vw;
+      margin-left: 10vw;
+    }
+  }
+}
+@media (max-width: 785px) {
+  .stylesMain {
+    width: 100%;
+    position: relative;
+    margin-top: -1px;
+    padding-top: 1px;
+    padding-bottom: 100px;
+    .landImage{
+      z-index: -1;
+    }
+    .container {
+      width: 80vw;
+      margin-left: 10vw;
+      margin-top: 50px;
+
+      .flex {
+        display: flex;
+        margin-top: 25px;
+        flex-direction: column;
+        .img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

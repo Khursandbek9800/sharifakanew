@@ -1,0 +1,52 @@
+.stylesMain{
+  width: 100%;
+  position: relative;
+  margin-top: -1px;
+  padding-top: 1px;
+  padding-bottom: 100px;
+  .landImage1{
+    z-index: -1;
+  }
+  .abs{
+    width: 60%;
+    margin-left: 20%;
+    height: 50vh;
+    position: absolute;
+    top: -20vh;
+    animation: mymove 2s 1;
+    @keyframes mymove {
+      from {
+        transform:translateX(-50%);
+      }
+      to {
+        transform:translateX(0);
+      }
+    }
+  }
+  .down{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 60vh;
+  }
+}
+@media (max-width: 600px) {
+  .stylesMain{
+    width: 100%;
+    position: relative;
+    margin-top: -1px;
+    padding-top: 1px;
+    padding-bottom: 100px;
+    .abs{
+      width: 80%;
+      margin-left: 10%;
+      height: 50vh;
+      position: absolute;
+      top: -20vh;
+    }
+    .down{
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 60vh;
+    }
+  }
+}

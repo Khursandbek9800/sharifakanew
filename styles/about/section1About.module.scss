@@ -1,0 +1,526 @@
+@import "styles/constants";
+
+.stylesMain {
+  width: 100%;
+  position: relative;
+  margin-top: -1px;
+  padding-top: 1px;
+  padding-bottom: 50px;
+
+  .landImage {
+    z-index: -1;
+  }
+
+
+
+  .wrapN {
+    margin-top: -20vh;
+    .absolute {
+      display: flex;
+      width: 60vw;
+      margin-left: 20vw;
+      background-color: white;
+      animation: mymove 2s 1;
+      @keyframes mymove {
+        from {
+          transform:translateX(-50%);
+        }
+        to {
+          transform:translateX(0);
+        }
+      }
+      .first {
+        width: 25vw;
+        margin: 20px;
+        position: relative;
+
+        .landImage {
+          z-index: 1;
+        }
+      }
+
+      .second {
+        width: 25vw;
+        margin: 20px;
+        overflow: hidden;
+
+        .title {
+          font-size: 24px;
+          font-family: $font-family1;
+          color: $title-color;
+          text-transform: uppercase;
+        }
+
+        .title1 {
+          font-size: 14px;
+        }
+
+        .line {
+          width: 50px;
+          height: 2px;
+          background-color: $color-main;
+          margin: 10px 0;
+        }
+
+        .box {
+          border: 1px solid $color-main;
+          padding: 20px;
+          margin-top: 20px;
+          position: relative;
+          overflow: hidden;
+
+          .title1 {
+            font-size: 14px;
+          }
+        }
+
+        .absolute1 {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          background-color: $color-main;
+          right: -10px;
+          bottom: -25px;
+          //border-top-left-radius: 20px;
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-around;
+          padding-top: 10px;
+
+          .iconArrow {
+            color: white;
+            font-size: 20px;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
+
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+
+      .title {
+        font-size: 32px;
+        font-family: $font-family1;
+        color: $title-color;
+        text-transform: uppercase;
+      }
+
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: $color-main;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .grid {
+    width: 60vw;
+    margin-left: 20vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
+
+    .row {
+      padding: 30px 10px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        font-size: 28px;
+      }
+
+      .title1 {
+        font-size: 20px;
+        color: $title-color;
+        margin-top: 5px;
+      }
+
+      .text {
+        text-align: center;
+        color: $title-color;
+      }
+
+      .arrowIc {
+        color: $color-main;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 994px) {
+  .stylesMain {
+    .grid {
+      width: 80%;
+      margin-left: 10%;
+
+      .row {
+        padding: 30px 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          font-size: 28px;
+        }
+
+        .title1 {
+          font-size: 20px;
+          color: $title-color;
+          margin-top: 5px;
+        }
+
+        .text {
+          text-align: center;
+          color: $title-color;
+        }
+
+        .arrowIc {
+          color: $color-main;
+          margin-top: 10px;
+        }
+      }
+    }
+
+
+
+    .wrapN {
+      margin-top: -20vh;
+      .absolute {
+        flex-direction: column;
+        background-color: white;
+        overflow: hidden;
+        height: auto;
+        display: flex;
+        width: 80vw;
+        margin-left: 10vw;
+
+        .first {
+          height: 50vh;
+          position: relative;
+          width: 95%;
+          margin: 2.5%;
+
+          .landImage {
+            z-index: 1;
+          }
+        }
+
+        .second {
+          height: auto;
+          width: 95%;
+          margin: 2.5%;
+
+          .title {
+            font-size: 24px;
+            font-family: $font-family1;
+            color: $title-color;
+            text-transform: uppercase;
+          }
+
+          .line {
+            width: 50px;
+            height: 2px;
+            background-color: $color-main;
+            margin: 10px 0;
+          }
+
+          .box {
+            border: 1px solid $color-main;
+            padding: 10px;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+
+            .title1 {
+              font-size: 14px;
+            }
+          }
+
+          .absolute1 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $color-main;
+            right: -10px;
+            bottom: -25px;
+            //border-top-left-radius: 20px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+
+            .iconArrow {
+              color: white;
+              font-size: 20px;
+              font-weight: lighter;
+            }
+          }
+        }
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+          font-size: 32px;
+          font-family: $font-family1;
+          color: $title-color;
+          text-transform: uppercase;
+        }
+
+        .line {
+          width: 50px;
+          height: 2px;
+          background-color: $color-main;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 605px) {
+  .stylesMain {
+    .grid {
+      width: 80%;
+      margin-left: 10%;
+
+      .row {
+        padding: 30px 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          font-size: 28px;
+        }
+
+        .title1 {
+          font-size: 20px;
+          color: $title-color;
+          margin-top: 5px;
+        }
+
+        .text {
+          text-align: center;
+          color: $title-color;
+        }
+
+        .arrowIc {
+          color: $color-main;
+          margin-top: 10px;
+        }
+      }
+    }
+
+
+
+    .wrapN {
+      .absolute {
+        flex-direction: column;
+        overflow: hidden;
+
+        display: flex;
+        width: 80vw;
+        margin-left: 10vw;
+
+        .first {
+          height: 50vh;
+          position: relative;
+          width: 95%;
+          margin: 2.5%;
+
+          .landImage {
+            z-index: 1;
+          }
+        }
+
+        .second {
+          position: relative;
+          width: 95%;
+          margin: 2.5%;
+
+          .title {
+            font-size: 24px;
+            font-family: $font-family1;
+            color: $title-color;
+            text-transform: uppercase;
+          }
+
+          .line {
+            width: 50px;
+            height: 2px;
+            background-color: $color-main;
+            margin: 10px 0;
+          }
+
+          .box {
+            border: 1px solid $color-main;
+            padding: 10px;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+
+            .title1 {
+              font-size: 14px;
+            }
+          }
+
+          .absolute1 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: $color-main;
+            right: -10px;
+            bottom: -25px;
+            //border-top-left-radius: 20px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+
+            .iconArrow {
+              color: white;
+              font-size: 20px;
+              font-weight: lighter;
+            }
+          }
+        }
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+          font-size: 32px;
+          font-family: $font-family1;
+          color: $title-color;
+          text-transform: uppercase;
+        }
+
+        .line {
+          width: 50px;
+          height: 2px;
+          background-color: $color-main;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .stylesMain {
+
+    .wrapN {
+      .flex {
+        .title {
+          font-size: 24px;
+          font-family: $font-family1;
+          color: $title-color;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 469px) {
+  .stylesMain {
+    .wrapN {
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title {
+          font-size: 20px;
+          font-family: $font-family1;
+          color: $title-color;
+          text-transform: uppercase;
+        }
+
+        .line {
+          width: 50px;
+          height: 2px;
+          background-color: $color-main;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  .stylesMain {
+    .absolute {
+      width: 90vw;
+      margin-left: 5vw;
+
+      .second {
+
+        .title {
+          font-size: 20px;
+          font-family: $font-family1;
+          color: $title-color;
+          text-transform: uppercase;
+        }
+
+        .box {
+          border: 1px solid $color-main;
+          padding: 10px;
+          margin-top: 20px;
+          position: relative;
+          overflow: hidden;
+
+          .title1 {
+            font-size: 14px;
+          }
+        }
+
+        .absolute1 {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          background-color: $color-main;
+          right: -10px;
+          bottom: -25px;
+          //border-top-left-radius: 20px;
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-around;
+          padding-top: 10px;
+
+          .iconArrow {
+            color: white;
+            font-size: 20px;
+            font-weight: lighter;
+          }
+        }
+      }
+    }
+  }
+}

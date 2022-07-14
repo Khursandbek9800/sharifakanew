@@ -1,0 +1,184 @@
+@import "styles/constants";
+
+.content {
+  margin-left: 5%;
+
+  animation: mymove 2s 1;
+  @keyframes mymove {
+    from {
+      transform:translateX(-50%);
+    }
+    to {
+      transform:translateX(0);
+    }
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    .icon {
+      color: white;
+    }
+
+    &:hover {
+      border: 2px solid $color-main;
+      cursor: pointer;
+
+      &:hover .icon {
+        color: $color-main;
+      }
+    }
+  }
+
+
+  .arrowIcon {
+    color: white;
+    margin-left: 5px;
+  }
+
+  .nextWrapper {
+    margin-left: 15%;
+    //animation: mymove 2s 1;
+    //@keyframes mymove {
+    //  from {
+    //    margin-left: 0;
+    //  }
+    //  to {
+    //    margin-left: 15%;
+    //  }
+    //}
+
+    .wrapOne {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .counselLaw {
+        color: white;
+        letter-spacing: 4px;
+        font-size: 45px;
+        font-family: $font-family1;
+      }
+
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: white;
+        margin-left: 5px;
+      }
+    }
+
+    .bestLaw {
+      color: white;
+      font-size: 22px;
+      width: 45vw;
+      line-height: 60px;
+      font-family: $font-family1;
+    }
+
+    .textWrap1 {
+      width: 40%;
+      margin: 20px 0;
+      color: white;
+    }
+  }
+}
+@media (max-width: 1094px) {
+  .nextWrapper{
+    margin-left: 10%;
+    .wrapOne {
+
+      .counselLaw {
+        font-size: 16px;
+      }
+
+      .line {
+        width: 50px;
+      }
+    }
+    .bestLaw{
+      width: 45vw;
+      line-height: 50px;
+      font-size: 40px;
+    }
+    .textWrap1{
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 994px) {
+  .nextWrapper{
+    margin-left: 10%;
+    .wrapOne {
+
+      .counselLaw {
+        font-size: 16px;
+      }
+
+      .line {
+        width: 50px;
+      }
+    }
+    .bestLaw{
+      width: 45vw;
+      line-height: 50px;
+      font-size: 40px;
+    }
+    .textWrap1{
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .nextWrapper{
+    margin-left: 10%;
+    .wrapOne {
+
+      .counselLaw {
+        font-size: 16px;
+      }
+
+      .line {
+        width: 40px;
+      }
+    }
+    .bestLaw{
+      width: 70vw;
+      line-height: 40px;
+      font-size: 30px;
+    }
+    .textWrap1{
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .nextWrapper{
+    margin-left: 10%;
+    .wrapOne {
+
+      .counselLaw {
+        font-size: 16px;
+      }
+
+      .line {
+        width: 40px;
+      }
+    }
+    .bestLaw{
+      width: 70vw;
+      line-height: 30px;
+      font-size: 25px;
+    }
+    .textWrap1{
+      width: 90%;
+    }
+  }
+}
